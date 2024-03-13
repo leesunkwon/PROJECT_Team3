@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "firebase": "^10.8.1",
     "sanitize-html": "^2.12.1"
   }
 }
