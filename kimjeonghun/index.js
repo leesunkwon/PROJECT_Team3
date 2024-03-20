@@ -18,7 +18,7 @@ const firebaseConfig = {
   measurementId: "G-FE3NFKSBVD",
 };
 
-const auth = getAuth(app);
+const auth = getAuth(app); //환경 변수를 받아서 앱으로
 const database = firebase.database();
 
 const app = initializeApp(firebaseConfig); //파이어베이스 앱 사용
