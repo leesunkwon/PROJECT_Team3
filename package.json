@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.3",
     "firebase": "^10.8.1",
     "firebaseui": "^6.1.0",
     "sanitize-html": "^2.12.1"

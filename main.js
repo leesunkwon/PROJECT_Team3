@@ -1,9 +1,11 @@
 //파이어베이스 모듈
+/*
 const firebase = require("firebase");
 const firebaseui = require("firebaseui");
 const firebaseapp = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
+*/
 
 //express, 기본 Node.js 모듈
 const express = require("express");
