@@ -28,35 +28,36 @@
 		
 		<h1>회원가입</h1>
 
-    <form action="", method="">
-        <link rel="stylesheet" href="join.css">
+        <div class="mb-3" id="InputBox">
+			<label for="exampleFormControlInput1" class="form-label">이름</label>
+			<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
 
-        <div id="InputBox">
-            <label for="username"> 이름 </label>
-            <input type="text" id="username"/><br>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group" style="margin-top: 30px;">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio1">남자</label>
+            
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio3">여자</label>
+              </div> <br>
 
-            <div class="gender-radio">
-                <input type="radio" name="gender" id="female"/>
-                <label for="female"> 여자 </label>
-                <input type="radio" name="gender" id="male"/>
-                <label for="male"> 남자 </label>
-            </div>
- 
-            <label for="useremail"> 아이디(이메일) </label>
-            <input type="email" id="useremail"/><br>
+            <label for="exampleFormControlInput1" class="form-label" style="margin-top: 30px;">아이디(이메일)</label>
+			<input type="email" class="form-control" id="exampleFormControlInput2" placeholder="">
 
-            <label for="userpassword"> 비밀번호 </label>
-            <input type="password" id="userpassword"/><br>
+			<label for="inputPassword5" class="form-label" style="margin-top: 30px;">비밀번호</label>
+			<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
 
-            <label for="userpassword"> 비밀번호확인 </label>
-            <input type="password" id="userpassword"/><br>
-        </div>
-        
-        <div id="InputBox">
-            <button type="submit">회원가입</button>
-        </div>
+            <label for="inputPassword5" class="form-label" style="margin-top: 30px;">비밀번호 재확인</label>
+			<input type="password" id="inputPasswordCheck" class="form-control" aria-describedby="passwordHelpBlock">
+		  </div>
 
-    </form>
+
+           <!-- 로그인 버튼-->
+		<div class="loginBox">
+			<div class="InloginBox">
+				<p class="loginText">회원가입</p>
+			</div>
+		</div>
 		
 
 
