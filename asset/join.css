@@ -1,0 +1,55 @@
+body {
+	background-color: #ffffff;
+	width: 100vx;
+	height: auto;
+}
+
+
+#InputBox {
+	margin-top: 80px;
+	margin-left: 36px;
+	margin-right: 36px;
+}
+
+
+/*회원가입 버튼 css*/
+button {
+    width: 360px;
+    height: 61px;
+    background: #9591F2;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px 15px;
+	box-shadow: 2px 2px 2px 2px #E7E7E7;
+    border: transparent;
+    
+}
+
+/* 라디오버튼 css*/
+.gender-radio input[type="radio"] {
+    display : none;
+}
+
+.gender-radio {
+    width: 360px;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.gender-radio label {
+    height: 100px;
+    line-height: 60px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.gender-radio input[type="radio"]:checked + label {
+    background: #9591F2;
+    color: #ffffff;
+}
