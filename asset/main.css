@@ -133,7 +133,7 @@ body {
   }
 
   .itemFontMain {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     margin-top: 10px;
     margin-left: 5px;
@@ -142,7 +142,7 @@ body {
   .itemFont {
     margin-top: 5px;
     margin-left: 5px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight:lighter;
   }
 
