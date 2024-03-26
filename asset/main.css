@@ -7,6 +7,7 @@
 body {
     margin: 0;
     padding: 0;
+    
   }
   
   .menu-btn {
@@ -74,7 +75,7 @@ body {
   }
 
   .midBoxFont {
-    margin-left: 30px;
+    margin-left: 15px;
     font-size: 25px;
     font-weight: bold;
   }
@@ -144,3 +145,43 @@ body {
     font-size: 18px;
     font-weight:lighter;
   }
+
+
+  .bottom_menu { 
+    position: fixed; 
+    bottom: 0px; 
+    left: 0px; 
+    width: 100%; 
+    height: 50px; 
+    z-index:100; 
+    border-top: 1px solid black; 
+    background-color: white ;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.iconCen {
+    width: 40%;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+	align-content: center;
+}
+
+.icon {
+    width: 30%;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+	align-content: center;
+}
+
+.material-icons.md-48 { font-size: 50px; }
+
+  .bottom {
+    width: 100%;
+    height: 100px;
+  }
+
+       
