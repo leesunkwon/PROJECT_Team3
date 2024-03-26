@@ -22,33 +22,124 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 		/>
 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
         <title>톡톡</title>
 	</head>
 
 	<body>
 
+		
 
-		<div class="header">
-			<div class="menu_btn"><a href="#">       
-			<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjQgNmgtMjR2LTRoMjR2NHptMCA0aC0yNHY0aDI0di00em0wIDhoLTI0djRoMjR2LTR6Ii8+PC9zdmc+">
-			</a>
+
+
+		  <div class="TobMenu">
+			<p class="MenuFont">MENU</p>
+
+		  </div>
+
+		  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<img src="https://img.freepik.com/free-vector/cosmetic-products-advertising-composition_1284-25632.jpg" class="d-block w-100" alt="..." style="height: 300px;">
+			  </div>
+			  <div class="carousel-item">
+				<img src="https://img.freepik.com/premium-vector/set-cosmetic-ads_68094-184.jpg" class="d-block w-100" alt="..." style="height: 300px;">
+			  </div>
+			  <div class="carousel-item">
+				<img src="https://img.freepik.com/premium-vector/serum-and-cream-with-clock-icon-anti-aging-concept_46857-705.jpg?size=626&ext=jpg" class="d-block w-100" alt="..." style="height: 300px;">
+			  </div>
 			</div>
-	</div>
-	<div class="menu_bg"></div>
-	<div class="sidebar_menu">
-		 <div class="close_btn"><a href="#">       
-			 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjMuOTU0IDIxLjAzbC05LjE4NC05LjA5NSA5LjA5Mi05LjE3NC0yLjgzMi0yLjgwNy05LjA5IDkuMTc5LTkuMTc2LTkuMDg4LTIuODEgMi44MSA5LjE4NiA5LjEwNS05LjA5NSA5LjE4NCAyLjgxIDIuODEgOS4xMTItOS4xOTIgOS4xOCA5LjF6Ii8+PC9zdmc+">
-			 </a>
-		 </div>
-		 <ul class="menu_wrap">
-			  <li><a href="#">메뉴01</a></li>
-			  <li><a href="#">메뉴02</a></li>
-			  <li><a href="#">메뉴03</a></li>
-			  <li><a href="#">메뉴04</a></li>
-		 </ul>
-	</div>
+		  </div>
+
+
+		  <div class="midBox">
+			<p class="midBoxFont">추천제품</p>
+		  </div>
+
+
+		  <div class="itemBox">
+			<div class="itemBoxin">
+				<div class="leftbox">
+					<img class="itemimg" src="https://www.womansense.co.kr/upload/woman/article/202003/thumb/44510-407857-sampleM.jpg" alt="">
+				</div>
+				<div class="rightbox">
+					<p class="itemFontMain">마녀공장</p>
+					<p class="itemFont">마녀공장 퓨어&딥 클렌징 폼 120ml</p>
+					<p class="itemFont">딥클렌징</p>
+
+				</div>
 			
+			</div>
+		  </div>
+
+		  <div class="itemBox">
+			<div class="itemBoxin">
+				<div class="leftbox">
+					<img class="itemimg" src="https://www.womansense.co.kr/upload/woman/article/202003/thumb/44510-407857-sampleM.jpg" alt="">
+				</div>
+				<div class="rightbox">
+					<p class="itemFontMain">마녀공장</p>
+					<p class="itemFont">마녀공장 퓨어&딥 클렌징 폼 120ml</p>
+					<p class="itemFont">딥클렌징</p>
+
+				</div>
+			
+			</div>
+		  </div>
+
+		  <div class="itemBox">
+			<div class="itemBoxin">
+				<div class="leftbox">
+					<img class="itemimg" src="https://www.womansense.co.kr/upload/woman/article/202003/thumb/44510-407857-sampleM.jpg" alt="">
+				</div>
+				<div class="rightbox">
+					<p class="itemFontMain">마녀공장</p>
+					<p class="itemFont">마녀공장 퓨어&딥 클렌징 폼 120ml</p>
+					<p class="itemFont">딥클렌징</p>
+
+				</div>
+			
+			</div>
+		  </div>
+		
+
+
+
+		<div class="menu-btn">
+			<button onclick="toggleMenu()">
+				<i class="fas fa-bars"></i> <!-- 메뉴 버튼에 아이콘 추가 -->
+			  </button>
+		  </div>
+		  
+		  <div class="menu">
+			  <img class="imgBox" src="https://cdn-dantats.stunning.kr/prod/portfolios/f5bbfc29-1624-414b-8ed5-b08e9c103c2d/covers/tGJqZULwDGrBuvey.order_sub_3196286_1_221108181123.jpeg.small?t=crop&q=60&f=webp&e=10x0&s=581x581" alt="">
+
+			<ul>
+			  <li><a href="#">ALL</a></li>
+			  <li><a href="#">SKINCARE</a></li>
+			  <li><a href="#">CLEANSING</a></li>
+			  <li><a href="#">MASK PACK</a></li>
+			  <li><a href="#">BASE</a></li>
+			  <li><a href="#">COLOR</a></li>
+			  <!-- Add more menu items as needed -->
+			</ul>
+
+			<button class="close-btn" onclick="toggleMenu()">
+				<i class="fas fa-times"></i> <!-- 닫기 버튼에 아이콘 추가 -->
+			  </button>
+		  </div>
+		  
+
+
+
+
+
+
+		  
+
+		 
+
 			
 		
 		
