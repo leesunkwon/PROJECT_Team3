@@ -9,12 +9,7 @@ body {
     padding: 0;
     
   }
-  
-  .menu-btn {
-    position: fixed;
-    top: 30px;
-    left: 10px;
-  }
+
 
   .menu-btn {
     padding: 7px;
@@ -22,6 +17,7 @@ body {
     color: #fff;
     border: none;
     cursor: pointer;
+    margin-left: 15px;
   }
   
   .menu {
@@ -68,11 +64,26 @@ body {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 10px;
-  }
 
+    display: flex;
+    justify-content: center;
+	align-content: center;
+  }
   .MenuFont {
     font-size: 30px;
   }
+
+
+ .TopMenuIn1 {
+  width: 30%;
+  height: 40px;
+  display: flex;
+ }
+
+ .TopMenuIn2 {
+  width: 40%;
+
+ }
 
 
   /* 추천 박스 */
