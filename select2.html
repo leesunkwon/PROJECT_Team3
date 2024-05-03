@@ -37,15 +37,15 @@
 		<!-- 피부 관련 질문 선택 버튼 -->
 		<div class="QItemBox">
 
-			<div class="QItem1">
+			<div class="QItem1" id="item1" onclick="toggleSelectedItem('item1')">
 				<p class="ItemFont1">각질</p>
 			</div>
 
-			<div class="QItem1">
+			<div class="QItem1" id="item2" onclick="toggleSelectedItem('item2')">
 				<p class="ItemFont1">피지/블랙헤드</p>
 			</div>
 
-			<div class="QItem1">
+			<div class="QItem1" id="item3" onclick="toggleSelectedItem('item3')">
 				<p class="ItemFont1">모공</p>
 			</div>
 
@@ -54,15 +54,15 @@
 
 		<div class="QItemBox2">
 
-			<div class="QItem1">
+			<div class="QItem1" id="item4" onclick="toggleSelectedItem('item4')">
 				<p class="ItemFont1">미백/잡티</p>
 			</div>
 
-			<div class="QItem2">
+			<div class="QItem1" id="item5" onclick="toggleSelectedItem('item5')">
 				<p class="ItemFont2">주름/탄력</p>
 			</div>
 
-			<div class="QItem1">
+			<div class="QItem1" id="item6" onclick="toggleSelectedItem('item6')">
 				<p class="ItemFont1">해당없음</p>
 			</div>
 
@@ -74,14 +74,43 @@
 				<p class="BtnFont1">이전</p>
 			</div>
 
-			<div class="Btn2">
+			<div class="Btn2"onclick="goToNextPage()">
 				<p class="BtnFont2">다음</p>
 			</div>
 
 		</div>
 		
 		
-		
+		<script>
+
+
+			let selectedItem = null;
+			let selectedItemText = null;
+			
+			function toggleSelectedItem(itemId) {
+				if (selectedItem) {
+					document.getElementById(selectedItem).classList.remove('QItem2');
+					document.getElementById(selectedItem).classList.add('QItem1');
+				}
+				selectedItem = itemId;
+				document.getElementById(selectedItem).classList.remove('QItem1');
+				document.getElementById(selectedItem).classList.add('QItem2');
+			
+				// 선택된 아이템의 내용 추출
+				selectedItemText = document.getElementById(selectedItem).innerText;
+			}
+			
+			function goToNextPage() {
+				if (selectedItem) {
+					// 아이템의 ID와 내용을 URL에 추가하여 다음 페이지로 전달
+					window.location.href = "select3.html?selectedItem=" + encodeURIComponent(selectedItemText);
+				} else {
+					alert("아이템을 선택하세요.");
+				}
+			}
+			
+					</script>
+					
 
 
 		<script
