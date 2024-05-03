@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="asset/main.css" />
 
 		<script src="motion.js"></script>
+		<script src="main.js"></script>
 
 		<!-- 애니메이션-->
 		<link
@@ -158,11 +159,51 @@
 
 			<ul>
 			  <li><a href="#">ALL</a></li>
-			  <li><a href="#">SKINCARE</a></li>
-			  <li><a href="#">CLEANSING</a></li>
-			  <li><a href="#">MASK PACK</a></li>
-			  <li><a href="#">BASE</a></li>
-			  <li><a href="#">COLOR</a></li>
+			  <li><a href="#" onclick="showSkincare()">SKINCARE</a></li>
+			  <div id="Productslist" style="display: none;">
+				<ul>
+					<li> - 스킨/오일/토너</li>
+					<li> - 크림/로션</li>
+					<li> - 앰플/세럼/에센스</li>
+					<li> - 패드</li>
+				</ul>
+			</div>
+			  <li><a href="#" onclick="showSkincare2()">CLEANSING</a></li>
+			  <div id="Productslist2" style="display: none;">
+				<ul>
+					<li> - 스킨/오일/토너</li>
+					<li> - 크림/로션</li>
+					<li> - 앰플/세럼/에센스</li>
+					<li> - 패드</li>
+				</ul>
+			</div>
+			  <li><a href="#" onclick="showSkincare3()">MASK PACK</a></li>
+			  <div id="Productslist3" style="display: none;">
+				<ul>
+					<li> - 스킨/오일/토너</li>
+					<li> - 크림/로션</li>
+					<li> - 앰플/세럼/에센스</li>
+					<li> - 패드</li>
+				</ul>
+			</div>
+			  <li><a href="#" onclick="showSkincare4()">BASE</a></li>
+			  <div id="Productslist4" style="display: none;">
+				<ul>
+					<li> - 스킨/오일/토너</li>
+					<li> - 크림/로션</li>
+					<li> - 앰플/세럼/에센스</li>
+					<li> - 패드</li>
+				</ul>
+			</div>
+			  <li><a href="#" onclick="showSkincare5()">COLOR</a></li>
+			  <div id="Productslist5" style="display: none;">
+				<ul>
+					<li> - 스킨/오일/토너</li>
+					<li> - 크림/로션</li>
+					<li> - 앰플/세럼/에센스</li>
+					<li> - 패드</li>
+				</ul>
+			</div>
 			  <!-- Add more menu items as needed -->
 			</ul>
 
@@ -170,6 +211,10 @@
 				<i class="fas fa-times"></i> <!-- 닫기 버튼에 아이콘 추가 -->
 			  </button>
 		  </div>
+
+
+
+		  <!-- Skincare products list (hidden by default) -->
 
 
 
