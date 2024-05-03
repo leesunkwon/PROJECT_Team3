@@ -1,0 +1,153 @@
+
+
+@import "reset.css";
+
+
+body {
+	background-color: #FFFFFF;
+	width: 100vw;
+	height: auto;
+
+	/*애니메이션*/
+	animation: fadeInLeftBig; /*애니메이션 종류*/
+	animation-duration: 1s; /*애니메이션 진행 시간*/
+}
+
+
+h1 {
+	font-size: 1.1em;
+	font-weight: bold;
+
+
+	/*애니메이션*/
+	animation: bounce; /*애니메이션 종류*/
+  	animation-duration: 2s; /*애니메이션 진행 시간*/
+}
+
+
+	/*피부 관련 질문*/
+.QText {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-top: 200px;
+}
+
+
+
+/*피부 관련 질문 선택 버튼*/
+.QItemBox {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-top: 100px;
+}
+
+.QItemBox2 {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-top: 30px;
+}
+
+
+/*선택 안함*/
+.QItem1 {
+	width: auto;
+	height: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	border-radius: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 1px solid #999999;
+	
+}
+
+
+/*선택 함*/
+.QItem2 {
+	width: auto;
+	height: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #9591F2;
+	border-radius: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.ItemFont2 {
+	color: #FFFFFF;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.ItemFont1 {
+	color: #999999;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+
+
+
+/*이전, 다음 버튼*/
+.BtnBox {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-top: 180px;
+}
+
+
+
+.Btn1 {
+	width: 130px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #E4E4E4;
+	border-radius: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	
+}
+
+.Btn2 {
+	width: 130px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #9591F2;
+	border-radius: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.BtnFont1 {
+	color: #000000;
+	font-weight: bold;
+}
+
+.BtnFont2 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+
+
+
+
+

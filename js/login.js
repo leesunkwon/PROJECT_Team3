@@ -27,7 +27,7 @@ window.login = function (e) {
     signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             const user = userCredential.user;
-            alert('로그인 성공');
+            alert('로그인에 성공했습니다.');
             location.href = '/select1'
         })
         .catch((error) => {

@@ -34,6 +34,10 @@ app.get('/select3', (req, res) => {
     res.sendFile(__dirname + '/template/select3.html');
 });
 
+app.get('/main', (req, res) => {
+    res.sendFile(__dirname + '/template/main.html');
+})
+
 app.listen(port, () => {
     console.log('서버 가동')
 });

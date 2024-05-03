@@ -47,6 +47,7 @@ window.signUp = function (e) {
     if (validate_email(email) == false || validate_field(name) == false || password_check() == false) {
         alert('다시 확인하세요.');
     } else {
+        alert("회원가입이 완료되었습니다.");
         createUserWithEmailAndPassword(auth, email, password)
             .then(async (userCredential) => {
                 const user = userCredential.user;
@@ -56,7 +57,9 @@ window.signUp = function (e) {
                     sex: sex,
                     email: email,
                     personal_color: null,
-                    skin_type: null
+                    skin_type: null,
+                    skin_concern: null,
+                    recommend_product: null
                 }).then(() => {
                     window.location.href = '/'
                 });
