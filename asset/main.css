@@ -1,0 +1,202 @@
+@import "reset.css";
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    
+  }
+
+
+  .menu-btn {
+    padding: 7px;
+    background: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* 메뉴가 초기에 숨겨진 상태 */
+    width: 300px;
+    height: 100%;
+    background: #333;
+    transition: left 0.3s ease; /* 왼쪽으로의 트랜지션 효과 */
+  }
+  
+  .close-btn {
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu ul li {
+    padding: 10px;
+  }
+  
+  .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+
+
+  /* 메뉴 */
+  .TobMenu {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: center;
+	align-content: center;
+  }
+  .MenuFont {
+    font-size: 30px;
+  }
+
+
+ .TopMenuIn1 {
+  width: 30%;
+  height: 40px;
+  display: flex;
+ }
+
+ .TopMenuIn2 {
+  width: 40%;
+
+ }
+
+
+  /* 추천 박스 */
+  .midBox {
+    margin-top: 40px;
+    width: 100%;
+    align-items: start;
+  }
+
+  .midBoxFont {
+    margin-left: 15px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  /*메뉴바 로고*/
+
+  .imgBox {
+    width: 300px;
+  }
+
+
+
+
+  .itemBox {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+	align-content: center;
+    height: 100px;
+  }
+
+  .itemBoxin {
+    
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .itemimg {
+    width: 90%;
+    height: 100%;
+    object-fit: fill;
+
+  }
+
+  .leftbox {
+    
+    width: 30%;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+	align-content: center;
+  }
+
+  .rightbox {
+    
+    width: 70%;
+    height: 100px;
+    flex-direction: row;
+  }
+
+  .itemFontMain {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .itemFont {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight:lighter;
+  }
+
+
+  .bottom_menu { 
+    position: fixed; 
+    bottom: 0px; 
+    left: 0px; 
+    width: 100%; 
+    height: 50px; 
+    z-index:100; 
+    border-top: 1px solid black; 
+    background-color: white ;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.iconCen {
+    width: 40%;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+	align-content: center;
+}
+
+.icon {
+    width: 30%;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+	align-content: center;
+}
+
+.material-icons.md-48 { font-size: 40px; }
+
+  .bottom {
+    width: 100%;
+    height: 100px;
+  }

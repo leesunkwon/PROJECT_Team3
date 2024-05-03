@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- 부트스트랩-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="stylesheet" href="../asset/join.css" />
+
+		<!-- 애니메이션-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+
+		<script type="module" src="../js/signup.js"></script>
+
+
+        <title>톡톡(회원가입)</title>
+	</head>
+
+	<body>
+		
+		<h1>회원가입</h1>
+
+        <div class="mb-3" id="InputBox">
+			<label for="exampleFormControlInput1" class="form-label">이름</label>
+			<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group" style="margin-top: 30px;">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio1">남자</label>
+            
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio3">여자</label>
+              </div> <br>
+
+            <label for="exampleFormControlInput1" class="form-label" style="margin-top: 30px;">아이디(이메일)</label>
+			<input type="email" class="form-control" id="exampleFormControlInput2" placeholder="">
+
+			<label for="inputPassword5" class="form-label" style="margin-top: 30px;">비밀번호</label>
+			<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" oninput="password_check(event)">
+
+            <label for="inputPassword5" class="form-label" style="margin-top: 30px;">비밀번호 재확인</label>
+			<input type="password" id="inputPasswordCheck" class="form-control" aria-describedby="passwordHelpBlock" oninput="password_check(event)">
+			<!-- 비밀번호 일치 여부 결과 출력 -->
+			<span id="pwConfirm"></span>
+		  </div>
+
+
+           <!-- 로그인 버튼-->
+		<div class="loginBox">
+			<div class="InloginBox" onclick="signUp(event)">
+					<p class="loginText">회원가입</p>				
+			</div>
+		</div>
+		
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
