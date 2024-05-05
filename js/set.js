@@ -41,4 +41,13 @@ window.setting = async function (e) {
         name[i].innerHTML = docRef.data().name;
         brand[i].innerHTML = docRef.data().brand;
     }
+
+    // 사용자 정보 가져오기
+    onAuthStateChanged(auth, async (user) => {
+        const uid = user.uid;
+
+        const docRef2 = await getDoc(doc(db, "users", uid));
+        console.log("Name: ", docRef2.data().name);
+        console.log("Email: ", docRef2.data().email);
+    });
 }
