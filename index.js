@@ -35,7 +35,7 @@ app.get('/select3', (req, res) => {
 });
 
 app.get('/main', (req, res) => {
-    // res.status(403).send("Access Forbidden");
+    res.status(403).send("Access Forbidden");
     res.sendFile(__dirname + '/template/main.html');
 })
 
