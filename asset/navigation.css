@@ -41,45 +41,48 @@ body, html {
   background-color: #e0e0e0; /* 호버 시 배경색 변경 */
 }
 
-.category h2 {
-  font-size: 18px; /* 글씨 크기 조정 */
-  color: #333;
-  margin-bottom: 10px; /* 간격 추가 */
+
+.navigation {
+  margin-bottom: 20px;
+}
+
+.category {
+  margin-bottom: 30px;
 }
 
 .cards {
   display: flex;
-  overflow-x: auto;
-  margin-bottom: 16px;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card {
-  flex: 0 0 30%;
-  height: 180px; /* 카드의 높이를 증가시킴 */
-  background-color: #fff;
-  display: flex;
-  flex-direction: column; /* 컨텐츠를 세로로 배열 */
-  align-items: center;
-  justify-content: space-between; /* 이미지와 텍스트 사이의 간격 */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  border-radius: 8px;
-  margin-right: 10px;
-  scroll-snap-align: start;
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .card img {
-  width: 100%; /* 이미지의 너비 */
-  height: 80%; /* 이미지의 높이 */
-  object-fit: cover; /* 이미지 비율 유지 */
-  border-top-left-radius: 8px; /* 이미지 상단 둥글게 */
-  border-top-right-radius: 8px;
+  width: 100%;
+  height: auto;
 }
 
 .card span {
-  font-size: 14px; /* 텍스트 크기 조정 */
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
   color: #333;
-  padding: 5px; /* 텍스트 패딩 */
+}
+
+.card:hover {
+  transform: scale(1.15);
+}
+
+
+#fontStyle {
+  font-size: small;
+  margin-bottom: 10px;
 }
 
