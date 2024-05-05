@@ -12,7 +12,7 @@
 			crossorigin="anonymous"
 		/>
 
-		<link rel="stylesheet" href="../asset/select1.css" />
+		<link rel="stylesheet" href="asset/select1.css" />
 
 		<!-- 애니메이션-->
 		<link
@@ -20,60 +20,229 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 		/>
 
-		<script type="module" src="../js/select.js"></script>
-
 
         <title>톡톡 (피부 관련 질문)</title>
 	</head>
 
 	<body>
+
+
 		<div class="QText">
 			<h1>본인의 피부타입을 선택 해 주세요.</h1>
 		</div>
 
-		<!-- 피부 관련 질문 선택 버튼 -->
-		<div class="QItemBox">
 
-			<div class="QItem1">
-				<p class="ItemFont1">건성</p>
+
+
+		<!-- 피부 관련 질문 선택 버튼 --> 
+		<div id="data1">
+			<div class="QItemBox">
+				<div class="QItem1" id="item1" onclick="toggleSelectedItem('item1', 'data1')">
+					<p class="ItemFont1">건성</p>
+				</div>
+			
+				<div class="QItem1" id="item2" onclick="toggleSelectedItem('item2', 'data1')">
+					<p class="ItemFont1">지성</p>
+				</div>
 			</div>
+			
+			<div class="QItemBox2">
+				<div class="QItem1" id="item3" onclick="toggleSelectedItem('item3', 'data1')">
+					<p class="ItemFont1">복합성</p>
+				</div>
+			
+				<div class="QItem1" id="item4" onclick="toggleSelectedItem('item4', 'data1')">
+					<p class="ItemFont1">여드름성</p>
+				</div>
+			
+				<div class="QItem1" id="item5" onclick="toggleSelectedItem('item5', 'data1')">
+					<p class="ItemFont1">민감성</p>
+				</div>
+			</div>
+		</div>
+		
 
-			<div class="QItem1">
-				<p class="ItemFont1">지성</p>
+
+		<div class="QText">
+			<h1>피부 고민이 있나요?</h1>
+		</div>
+
+	
+		<!-- 피부 관련 질문 선택 버튼 -->
+
+		<div id="data2">
+			<div class="QItemBox">
+
+				<div class="QItem1" id="item6" onclick="toggleSelectedItem('item6', 'data2')">
+					<p class="ItemFont1">각질</p>
+				</div>
+	
+				<div class="QItem1" id="item7" onclick="toggleSelectedItem('item7', 'data2')">
+					<p class="ItemFont1">피지/블랙헤드</p>
+				</div>
+	
+				<div class="QItem1" id="item8" onclick="toggleSelectedItem('item8', 'data2')">
+					<p class="ItemFont1">모공</p>
+				</div>
+	
+			</div>
+	
+			<div class="QItemBox2">
+	
+				<div class="QItem1" id="item9" onclick="toggleSelectedItem('item9', 'data2')">
+					<p class="ItemFont1">미백/잡티</p>
+				</div>
+	
+				<div class="QItem1" id="item10" onclick="toggleSelectedItem('item10', 'data2')">
+					<p class="ItemFont1">주름/탄력</p>
+				</div>
+	
+				<div class="QItem1" id="item11" onclick="toggleSelectedItem('item11', 'data2')">
+					<p class="ItemFont1">해당없음</p>
+				</div>
+	
+			</div>
+	
+		</div>
+
+		
+
+
+
+		<div class="QText">
+			<h1>추천받고 싶은 제품 종류를 선택 해 주세요.</h1>
+		</div>
+		<!-- 피부 관련 질문 선택 버튼 -->
+
+		<div id="data3">
+			<div class="QItemBox">
+
+				<div class="QItem1" id="item12" onclick="toggleSelectedItem('item12', 'data3')">
+					<p class="ItemFont1">스킨케어</p>
+				</div>
+	
+				<div class="QItem1" id="item13" onclick="toggleSelectedItem('item13', 'data3')">
+					<p class="ItemFont1">선케어</p>
+				</div>
+	
+				<div class="QItem1" id="item14" onclick="toggleSelectedItem('item14', 'data3')">
+					<p class="ItemFont1">팩</p>
+				</div>
+	
+			</div>
+			
+	
+			<div class="QItemBox2">
+	
+				<div class="QItem1" id="item15" onclick="toggleSelectedItem('item15', 'data3')">
+					<p class="ItemFont1">베이스</p>
+				</div>
+	
+				<div class="QItem1" id="item16" onclick="toggleSelectedItem('item16', 'data3')">
+					<p class="ItemFont1">색조 화장</p>
+				</div>
+	
+				<div class="QItem1" id="item17" onclick="toggleSelectedItem('item17', 'data3')">
+					<p class="ItemFont1">클렌징</p>
+				</div>
+	
+			</div>
+		</div>
+
+
+
+		<div class="QText">
+			<h1>본인의 퍼스널컬러를 선택해주세요.</h1>
+		</div>
+
+
+
+
+		<!-- 피부 관련 질문 선택 버튼 -->
+
+		<div id="data4">
+
+			<div class="QItemBox">
+
+				<div class="QItem1" id="item18" onclick="toggleSelectedItem('item18', 'data4')">
+					<p class="ItemFont1">봄웜</p>
+				</div>
+	
+				<div class="QItem1" id="item19" onclick="toggleSelectedItem('item19', 'data4')">
+					<p class="ItemFont1">여름쿨</p>
+				</div>
+			</div>
+			
+	
+			<div class="QItemBox2">
+	
+				<div class="QItem1" id="item20" onclick="toggleSelectedItem('item20', 'data4')">
+					<p class="ItemFont1">가을웜</p>
+				</div>
+	
+				<div class="QItem1" id="item21" onclick="toggleSelectedItem('item21', 'data4')">
+					<p class="ItemFont1">겨울쿨</p>
+				</div>
+	
 			</div>
 
 		</div>
 		
+		
 
-		<div class="QItemBox2">
-
-			<div class="QItem1">
-				<p class="ItemFont1">복합성</p>
-			</div>
-
-			<div class="QItem2">
-				<p class="ItemFont2">여드름성</p>
-			</div>
-
-			<div class="QItem1">
-				<p class="ItemFont1">민감성</p>
-			</div>
-
-		</div>
+		
 
 	<!-- 이전, 다음 버튼 -->
 		<div class="BtnBox">
 			<div class="Btn1">
-				<p class="BtnFont1" onclick="history.back()">이전</p>
+				<p class="BtnFont1">이전</p>
 			</div>
 
-			<div class="Btn2" onclick="select1(event)">
+			<div class="Btn2" onclick="goToNextPage()">
 				<p class="BtnFont2">다음</p>
 			</div>
 
 		</div>
 		
-		
+		<script>
+
+let selectedItems = {
+    data1: null, //본인의 피부타입을 선택 해 주세요.
+    data2: null, //피부 고민이 있나요?
+    data3: null, //추천받고 싶은 제품 종류를 선택 해 주세요.
+    data4: null //본인의 퍼스널컬러를 선택해주세요.
+};
+
+function toggleSelectedItem(itemId, groupId) {
+    // 해당 그룹의 모든 아이템들의 클래스 제거
+    let groupItems = document.getElementById(groupId).getElementsByClassName('QItem1');
+    for (let item of groupItems) {
+        item.classList.remove('QItem2');
+    }
+    // 선택된 아이템에 클래스 추가
+    document.getElementById(itemId).classList.add('QItem2');
+
+    // 선택된 아이템 기록
+    selectedItems[groupId] = itemId;
+    
+    console.log(selectedItems); // 선택된 아이템 확인용
+}
+
+function goToNextPage() {
+    // 모든 그룹이 선택된 아이템을 가지고 있는지 확인
+    for (let key in selectedItems) {
+        if (selectedItems[key] === null) {
+            alert("각 그룹마다 하나의 아이템을 선택하세요!");
+            return; // 선택되지 않은 아이템이 있으면 함수 종료
+        }
+    }
+
+    // 모든 그룹이 선택된 아이템을 가지고 있다면 다음 페이지로 이동
+    window.location.href = "다음페이지URL";
+}
+
+
+		</script>
 		
 
 
