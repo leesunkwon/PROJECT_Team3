@@ -4,3 +4,13 @@ window.onload = function() {
       window.history.back();  // 브라우저 히스토리에서 이전 페이지로 이동
   });
 };
+
+
+
+
+
+
+
+
+const clickedCardId = sessionStorage.getItem('clickedCard');
+console.log('Clicked card ID:', clickedCardId);
