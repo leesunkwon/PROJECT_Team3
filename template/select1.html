@@ -20,6 +20,7 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 		/>
 
+		<script type="module" src="../js/data.js"></script>
 
         <title>톡톡 (피부 관련 질문)</title>
 	</head>
@@ -236,9 +237,7 @@ function goToNextPage() {
             return; // 선택되지 않은 아이템이 있으면 함수 종료
         }
     }
-
-    // 모든 그룹이 선택된 아이템을 가지고 있다면 다음 페이지로 이동
-    window.location.href = "/main";
+	data(selectedItems);
 }
 
 
