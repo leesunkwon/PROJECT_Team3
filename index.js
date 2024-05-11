@@ -27,17 +27,39 @@ app.get('/signup', (req, res) => {
 app.get('/select1', (req, res) => {
     res.sendFile(__dirname + '/template/select1.html');
 });
-app.get('/select2', (req, res) => {
-    res.sendFile(__dirname + '/template/select2.html');
-});
-app.get('/select3', (req, res) => {
-    res.sendFile(__dirname + '/template/select3.html');
-});
 
+// 메인 화면
 app.get('/main', (req, res) => {
     // res.status(403).send("Access Forbidden");
     res.sendFile(__dirname + '/template/main.html');
-})
+});
+
+// 세부 화면
+app.get('/My.html', (req, res) => {
+    res.sendFile(__dirname + '/template/My.html');
+});
+app.get('/SKINCARE.html', (req, res) => {
+    res.sendFile(__dirname + '/template/SKINCARE.html');
+});
+app.get('/CLEANSING.html', (req, res) => {
+    res.sendFile(__dirname + '/template/CLEANSING.html');
+});
+app.get('/MASK PACK.html', (req, res) => {
+    res.sendFile(__dirname + '/template/MASK PACK.html');
+});
+app.get('/BASE.html', (req, res) => {
+    res.sendFile(__dirname + '/template/BASE.html');
+});
+app.get('/LIP.html', (req, res) => {
+    res.sendFile(__dirname + '/template/LIP.html');
+});
+app.get('/EYE.html', (req, res) => {
+    res.sendFile(__dirname + '/template/EYE.html');
+});
+app.get('/SUN CARE.html', (req, res) => {
+    res.sendFile(__dirname + '/template/SUN CARE.html');
+});
+
 
 app.listen(port, () => {
     console.log('서버 가동')

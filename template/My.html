@@ -25,19 +25,16 @@
 		/>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-		<script src="my.js"></script>
+
+		<script type="module" src="../js/mypage.js"></script>
+		<script type="module" src="../js/logout.js"></script>
+		<script type="module" src="../js/profile_delete.js"></script>
+
 
         <title>톡톡 (메인화면)</title>
 	</head>
 
-	<body>
-
-		
-
-
-
-		
-
+	<body onload="userData()">
 		<div class="promotion">
 			<div class="header">
 				<button class="back-button">〈</button>
@@ -48,9 +45,13 @@
 					
 				</div>
 				<div class="text-container">
-					<h1>이름</h1>
-					<h2>이메일</h2>
-					<button class="explore-button">회원탈퇴</button>
+					<h1 id="name">이름</h1>
+					<h2 id="email">이메일</h2>
+					<h2 id="skin_type">피부타입</h2>
+					<h2 id="skin_concern">피부고민</h2>
+					<h2 id="personal_color">퍼스널 컬러</h2>
+					<button class="explore-button" id="userDelete" onclick="userDelete(event)">회원탈퇴</button>
+					<button class="explore-button" onclick="logout(event)">로그아웃</button>
 				</div>
 			</div>
 		</div>
