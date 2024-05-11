@@ -41,8 +41,8 @@ window.data = async function (selectedItems) {
             recommend_product: set[2],
             skin_concern: set[1],
             skin_type: set[0]
-        }).then(
-            location.href = '/main'
-        );
+        }).then(() => {
+            window.location.href = '/main'
+        });
     });
 }

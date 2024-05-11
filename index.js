@@ -60,6 +60,9 @@ app.get('/SUN CARE.html', (req, res) => {
     res.sendFile(__dirname + '/template/SUN CARE.html');
 });
 
+app.get('/info.html', (req, res) => {
+    res.sendFile(__dirname + '/template/info.html');
+});
 
 app.listen(port, () => {
     console.log('서버 가동')

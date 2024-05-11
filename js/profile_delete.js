@@ -19,6 +19,19 @@ const auth = getAuth();
 const db = getFirestore();
 const user = auth.currentUser;
 
+if (user != null) {
+    user.DeleteAsync().ContinueWith(task => {
+      if (task.IsCanceled) {
+        Debug.LogError("DeleteAsync was canceled.");
+        return;
+      }
+      if (task.IsFaulted) {
+        Debug.LogError("DeleteAsync encountered an error: " + task.Exception);
+        return;
+      }
+    });
+}
+
 window.userDelete = function (e) {
     //db에서 사용자 정보 삭제
     onAuthStateChanged(auth, async (user) => {
