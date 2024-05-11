@@ -19,7 +19,7 @@ const auth = getAuth();
 const db = getFirestore();
 
 window.setting = async function (e) {
-    const cosmetics = ['skin_care', 'sun_care'];  // , 'eye_liner', 'eye_shadow'
+    const cosmetics = ['skin_care', 'sun_care', 'base_makeup', 'cleansing', 'lip_makeup', 'eye_liner', 'eye_shadow', 'pack'];
     const item = [];
     let what = cosmetics[Math.floor(Math.random() * cosmetics.length)] + Math.floor(Math.random() * 9);
 
